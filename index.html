@@ -11,8 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>스타일푸드 야미</title>
 </head>
 <body>
@@ -28,27 +31,64 @@
                 <ul id="tnb">
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
-                    <li><a href="#">장바구니</a></li>
-                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#" onclick="alert('로그인을 먼저 하세요');">장바구니</a></li>
+                    <li><a href="#" onclick="alert('로그인을 먼저 하세요');">마이페이지</a></li>
                 </ul>
             </div>
         </div>
         <hr class="gubun">
         <div class="nav">
-            <ul>
-                <li><a href="#">야미소개</a></li>
-                <li><a href="#">생산공정</a></li>
-                <li><a href="#">제품소개</a></li>
-                <li><a href="#">고객센터</a></li>
+            <ul id="gnb">
+                <li><a href="#">야미소개</a>
+                    <ul class="lnb">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">사업분야</a></li>
+                        <li><a href="#">특허현황</a></li>
+                        <li><a href="#">파트너사</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">생산공정</a>
+                    <ul class="lnb">
+                        <li><a href="#">냉동식품</a></li>
+                        <li><a href="#">신선식품</a></li>
+                        <li><a href="#">농산품</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품소개</a>
+                    <ul class="lnb">
+                        <li><a href="#">컵라면</a></li>
+                        <li><a href="#">아이스크림</a></li>
+                        <li><a href="#">음료수</a></li>
+                        <li><a href="#">과자</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                <ul class="lnb">
+                        <li><a href="#">전화상담</a></li>
+                        <li><a href="#">문자상담</a></li>
+                        <li><a href="#">신고접수</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div> 
     <!--/#header 끝-->
     <div id="slide">
-        <img src="images/visual.jpg" alt="스마일푸드 야미">
+        <div class="slogan">
+            <h2 class="notext">슬라이더이미지</h2>
+            <h3>함께하면 행복해지는</h3>
+            <h4>스마일푸드 야미</h4>
+        </div>
+        <div class="slider">
+            <div><img src="images/a1.jpg" alt="1"></div>
+            <div><img src="images/a2.jpg" alt="2"></div>
+            <div><img src="images/a3.jpg" alt="3"></div>
+        </div>
     </div>
     <div id="icons">
-        <ul class="imgItem"> <!--  ul>li*4>a[href=#]>img[src=visual_icon$ alt]    li 태그 한번에쓰는 코드-->
+        <ul class="imgItem"> <!--  고속코딩 기법 ul>li*4>a[href=#]>img[src=visual_icon$ alt]    li 태그 한번에쓰는 코드-->
             <li><a href="#"><img src="images/visual_icon1.jpg" alt="기업소개"></a></li>
             <li><a href="#"><img src="images/visual_icon2.jpg" alt="사업안내"></a></li>
             <li><a href="#"><img src="images/visual_icon3.jpg" alt="제품정보"></a></li>
@@ -79,5 +119,14 @@
             <p>copyright&copy; 2020. smile food yami all rights reserved</p>
         </div>
     </div>
-</body>dddd
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+              auto:true,
+              pause:3000,
+              pager:false
+          });
+        });
+    </script>
+</body>
 </html>
