@@ -62,14 +62,14 @@ a {
     display: block;
     color:#d60c00;
 }
-.lnb {     /* 메뉴에 메뉴 제작중*/
+.lnb {     /* 메뉴에 메뉴 제작중*/ 
     display: none;
     position: absolute;
     z-index:1000;      /* 메뉴가 사진위로 올라옴 */
     left:0;
     top:100%;
     width:100%;
-    box-shadow:0 10px 5px 0px #000000;
+    box-shadow:0 5px 5px 0px #000000;
     background: white;
 }
 .lnb li {
@@ -91,9 +91,10 @@ a {
 }
 /*==================== slide =========================*/
 #slide {
-    height:200px; /*원래 400px*/
+    height:400px; /*원래 400px*/
     overflow:hidden;
     position: relative;
+
 }
 .slogan {
     position: absolute;
@@ -101,12 +102,23 @@ a {
     color:#fff;
     text-shadow:0 0 5px #333; /*글자 그림자 효과*/
     left:50%;
-    top:100px;
-    transform: translateX(-50%);
-    font-size:20px;
+    top:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+.slogan h3 {
+    font-size:2.5rem;
+}
+.slogan h4 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+/*=========== bx 슬라이더 css ==========================*/
 .bx-wrapper {
     border:0;
+}
+#slide img {
+    height: 400px;
 }
 /*==========================icons ======================*/
 #icons {
