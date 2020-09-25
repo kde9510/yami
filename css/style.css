@@ -22,6 +22,21 @@ a {
 .user {
     float:right;
 }
+#burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    width: 25px;
+    height: 15px;
+}
+#burger.mobile span  {
+    display: block;
+    background: #000;
+    height: 3px;
+}
+#burger.mobile span:nth-child(2) {
+    margin:5px 0;
+}
 #tnb li {
     display: inline-block;
     margin-left: 15px;

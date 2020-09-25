@@ -1,3 +1,66 @@
-@media screen and (max-width:425px){
-    /* 미디어 쿼리 문법 1 - css에 포함시킬때 */
+@media screen and (max-width:412px){
+    .logo {
+        float:none;
+        text-align:center;
+    }
+    .user {
+        display: none;
+    }
+    #burger {
+        display:block;
+        top:50px;
+    }
+    #gnb li {
+        margin:0;
+        padding:15px 0;
+        width:calc(100%/4);
+        text-align: center;
+    }
+    #slide {
+        height: 200px;
+    }
+    .bx-wrapper {
+        height: 200px;
+    }
+    .slider img {
+        height:200px;
+    }
+    .slogan h3 {
+        font-size:1.1rem;
+    }
+    .slogan h4 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .imgItem {
+        width:100%;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        flex:1 1 auto;
+    }
+    .imgItem li {
+        width:50%;
+    }
+    .imgItem img {
+        max-width: 100%;
+    }
+    #main ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex:1 1 auto;
+        margin:20px 0;
+    }
+    #main ul li {
+        float:none; 
+        width: calc(100% / 3);
+        height: auto;
+        border-radius: 0;
+    }
+    #main ul li img {
+        width:100%;
+    }
+    #main ul li:nth-child(2) {
+        margin:0;
+    }
 }
